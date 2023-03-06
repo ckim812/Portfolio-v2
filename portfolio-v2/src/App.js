@@ -1,5 +1,5 @@
 import "./App.css";
-import { Header, Navbar, About, Work } from "./components";
+import { About, Work, Header, Navbar, Contact, Resume } from "./components";
 import { useState } from "react";
 
 const App = () => {
@@ -8,16 +8,20 @@ const App = () => {
   return (
     <>
       <Header>
-        <Navbar setPage = {setPage} />
+        <Navbar setPage={setPage} />
       </Header>
 
-{ 
-  page == 'about' ? 
-  <About /> : 
-  page == 'work' ?
-  <Work /> :
-  <Work />
-}
+      {
+      // page == "about" ? (<About />) : 
+      page == "work" ? (
+        <Work />
+      ) : page == "contact" ? (
+        <Contact />
+      ) : page == "resume" ? (
+        <Resume />
+      ) : (
+        <About />
+      )}
     </>
   );
 };
