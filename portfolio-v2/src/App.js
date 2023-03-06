@@ -1,5 +1,5 @@
 import "./App.css";
-import { About, Work, Header, Navbar, Contact, Resume } from "./components";
+import { About, Work, Header, Navbar, Contact, Resume, Footer } from "./components";
 import { useState } from "react";
 
 const App = () => {
@@ -11,9 +11,7 @@ const App = () => {
         <Navbar setPage={setPage} />
       </Header>
 
-      {
-      // page == "about" ? (<About />) : 
-      page == "work" ? (
+      {page == "work" ? (
         <Work />
       ) : page == "contact" ? (
         <Contact />
@@ -22,6 +20,8 @@ const App = () => {
       ) : (
         <About />
       )}
+
+      <Footer />
     </>
   );
 };

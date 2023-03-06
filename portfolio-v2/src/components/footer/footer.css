@@ -1,0 +1,12 @@
+#footer {
+  background: repeating-linear-gradient(15deg, teal 100px, black 150px);
+  height: 5vh;
+  border-bottom: 10px solid #000;
+  color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+}
