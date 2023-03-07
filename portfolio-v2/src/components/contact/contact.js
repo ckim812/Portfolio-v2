@@ -12,6 +12,7 @@ const Contact = () => (
           <li>
             <input placeholder="Email" type="email" name="email" required />
             {/* /.+@.+\..+/ */}
+            {/* /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i; */}
           </li>
           <li>
             <textarea placeholder="Message" name="message" required></textarea>

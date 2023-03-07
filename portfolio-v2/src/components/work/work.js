@@ -8,37 +8,37 @@ const Work = () => (
       title="title"
       github="https://www.github.com"
       deploy="https://www.google.com"
-      projectImageURL="../../assets/images/portfolioPlaceholder.svg"
+      projectImageURL="/assets/img/placeholderSVG.svg"
     />
     <Project
       title="title"
       github="https://www.github.com"
       deploy="https://www.google.com"
-      projectImageURL="../../assets/images/portfolioPlaceholder.svg"
+      projectImageURL="/assets/img/placeholderSVG.svg"
     />
     <Project
       title="title"
       github="https://www.github.com"
       deploy="https://www.google.com"
-      projectImageURL="../../assets/images/portfolioPlaceholder.svg"
+      projectImageURL="/assets/img/placeholderSVG.svg"
     />
     <Project
       title="title"
       github="https://www.github.com"
       deploy="https://www.google.com"
-      projectImageURL="../../assets/images/portfolioPlaceholder.svg"
+      projectImageURL="/assets/img/placeholderSVG.svg"
     />
     <Project
       title="title"
       github="https://www.github.com"
       deploy="https://www.google.com"
-      projectImageURL="../../assets/images/portfolioPlaceholder.svg"
+      projectImageURL="/assets/img/placeholderSVG.svg"
     />
     <Project
       title="title"
       github="https://www.github.com"
       deploy="https://www.google.com"
-      projectImageURL="../../assets/images/portfolioPlaceholder.svg"
+      projectImageURL="/assets/img/placeholderSVG.svg"
     />
   </div>
 );

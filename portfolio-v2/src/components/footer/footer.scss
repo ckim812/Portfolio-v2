@@ -10,3 +10,11 @@
   background-color: black;
   text-align: center;
 }
+
+a {
+  &:hover {
+    svg {
+      color: lightskyblue;
+    }
+  }
+}

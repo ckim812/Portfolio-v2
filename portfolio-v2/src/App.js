@@ -1,17 +1,34 @@
 import "./App.css";
-import { About, Work, Header, Navbar, Contact, Resume, Footer } from "./components";
+import {
+  About,
+  Work,
+  Header,
+  Navbar,
+  Contact,
+  Resume,
+  Footer,
+} from "./components";
 import { useState } from "react";
+import { Route, Routes } from "react-router-dom";
 
 const App = () => {
-  const [page, setPage] = useState("about");
+  // const [page, setPage] = useState("about");
 
   return (
     <>
       <Header>
-        <Navbar setPage={setPage} />
+        {/* <Navbar setPage={setPage} /> */}
+        <Navbar></Navbar>
       </Header>
 
-      {page == "work" ? (
+      <Routes>
+        <Route path="/" element={<About />} />
+        <Route path="/work" element={<Work />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/resume" element={<Resume />} />
+      </Routes>
+
+      {/* {page == "work" ? (
         <Work />
       ) : page == "contact" ? (
         <Contact />
@@ -19,7 +36,7 @@ const App = () => {
         <Resume />
       ) : (
         <About />
-      )}
+      )} */}
 
       <Footer />
     </>

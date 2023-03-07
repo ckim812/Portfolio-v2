@@ -1,5 +1,4 @@
 import "./project.css";
-import { ReactComponent as Placeholder } from "../../assets/images/portfolioPlaceholder.svg";
 
 // const Project = (props) => {
 //   <div id="project">
@@ -13,7 +12,15 @@ function Project(props) {
   return (
     <div
       id="project"
-      style={{ backgroundImage: `url(${props.projectImageURL})` }}
+      style={{
+        backgroundImage: `url(${
+          process.env.PUBLIC_URL + props.projectImageURL
+        })`,
+        backgroundRepeat: "no-repeat",
+        width: "35%",
+        backgroundColor: "lightblue",
+        color: "cyan",
+      }}
     >
       <h1>Project Title: {props.title}</h1>
       <a href={props.github} target="_blank">
