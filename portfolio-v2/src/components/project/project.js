@@ -16,10 +16,7 @@ function Project(props) {
         backgroundImage: `url(${
           process.env.PUBLIC_URL + props.projectImageURL
         })`,
-        backgroundRepeat: "no-repeat",
-        width: "35%",
-        backgroundColor: "lightblue",
-        color: "cyan",
+        backgroundRepeat: "no-repeat"
       }}
     >
       <h1>Project Title: {props.title}</h1>

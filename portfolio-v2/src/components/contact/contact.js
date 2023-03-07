@@ -1,6 +1,5 @@
 import "./contact.css";
 import React from "react";
-import ReactDOM from "react-dom";
 import { useFormik } from "formik";
 
 const validateContact = (contactData) => {
@@ -41,7 +40,7 @@ const Contact = () => {
   });
 
   return (
-    <div>
+    <div className="container">
       <h2>Contact Form</h2>
       <form onSubmit={formik.handleSubmit}>
         <p>
@@ -74,14 +73,14 @@ const Contact = () => {
         </p>
         <p>
           <label htmlFor="Message">Message : </label>
-          <input
+          <textarea
             type="text"
             name="Message"
             id="Message"
             value={formik.values.Message}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
-          ></input>
+          ></textarea>
           {formik.touched.Message && formik.errors.Message ? (
             <span style={{ color: "red" }}>{formik.errors.Message}</span>
           ) : null}
@@ -91,30 +90,5 @@ const Contact = () => {
     </div>
   );
 };
-
-// const Contact = () => {
-//   <div id="contact">
-//     <h1>Contact</h1>
-//     <div class="container">
-//       <form>
-//         <label for="name">Name: </label>
-//         <input type="text" id="name" placeholder="Your name..." />
-//         <br />
-//         <br />
-//         <label for="email">Email: </label>
-//         <input type="text" id="email" placeholder="Your email..." />
-//         <br />
-//         <br />
-//         <label for="message">Message: </label>
-//         <br />
-//         <br />
-//         <textarea type="text" id="name" placeholder="Your message..." />
-//         <br />
-//         <br />
-//         <input type="submit" value="Submit" />
-//       </form>
-//     </div>
-//   </div>;
-// };
 
 export default Contact;
