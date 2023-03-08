@@ -19,7 +19,7 @@
     "sass": "^1.58.3",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://github.com/ckim812/Portfolio-v2",
+  "homepage": "https://ckim812.github.io/Portfolio-v2/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
