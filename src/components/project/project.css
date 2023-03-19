@@ -1,9 +1,23 @@
 #project {
-    display: flex;
-    width: 100%;
-    color: cyan;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  width: 300vh;
+  height: 30vh;
+  color: cyan;
+  background-color: black;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  margin: 15px;
+  padding: 5px;
+}
+
+h1,
+a {
+  color: cyan;
+  background-color: black;
+  border-radius: 7px;
+  margin: 5px;
+  padding: 5px;
 }

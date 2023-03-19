@@ -23,7 +23,7 @@ const Navbar = (props) => (
         to="/"
       >
         {/* <button onClick={() => props.setPage("about")}>About Me</button> */}
-        <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+        <FontAwesomeIcon icon={faHome} color="#4d4d4e" className="headerIcon" />
       </NavLink>
       <NavLink
         exact="true"
@@ -32,7 +32,7 @@ const Navbar = (props) => (
         to="/work"
       >
         {/* <button onClick={() => props.setPage("work")}>Portfolio</button> */}
-        <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
+        <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" className="headerIcon" />
       </NavLink>
 
       <NavLink
@@ -42,7 +42,7 @@ const Navbar = (props) => (
         to="/contact"
       >
         {/* <button onClick={() => props.setPage("contact")}>Contact</button> */}
-        <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+        <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" className="headerIcon" />
       </NavLink>
 
       <NavLink
@@ -52,7 +52,7 @@ const Navbar = (props) => (
         to="/resume"
       >
         {/* <button onClick={() => props.setPage("resume")}>Resume</button> */}
-        <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+        <FontAwesomeIcon icon={faUser} color="#4d4d4e" className="headerIcon" />
       </NavLink>
     </div>
   </nav>

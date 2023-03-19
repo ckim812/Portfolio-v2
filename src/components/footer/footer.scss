@@ -1,5 +1,6 @@
 #footer {
-  background: repeating-linear-gradient(15deg, teal 100px, black 150px);
+  // background: repeating-linear-gradient(15deg, teal 100px, black 150px);
+  background-color: black;
   height: 5vh;
   border-bottom: 10px solid #000;
   color: white;
@@ -9,6 +10,8 @@
   width: 100%;
   background-color: black;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 a {
@@ -17,4 +20,8 @@ a {
       color: lightskyblue;
     }
   }
+}
+
+.anchor-icon {
+  height: 7vh
 }

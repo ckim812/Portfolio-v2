@@ -7,6 +7,12 @@
 
 nav h1 {
   font-size: 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.header-name {
+  text-decoration: none;
 }
 
 nav button {
@@ -48,32 +54,43 @@ nav {
 
   a.about-link {
     &:after {
-      content: 'ABOUT';
+      content: "ABOUT";
+      font-size: x-large;
     }
+    text-align: center;
   }
-  
+
   a.work-link {
     &:after {
-      content: 'PORTFOLIO';
+      content: "PORTFOLIO";
+      font-size: x-large;
     }
+    text-align: center;
   }
-  
+
   a.contact-link {
     &:after {
-      content: 'CONTACT';
+      content: "CONTACT";
+      font-size: x-large;
     }
+    text-align: center;
   }
-  
+
   a.resume-link {
     &:after {
-      content: 'RESUME';
+      content: "RESUME";
+      font-size: x-large;
     }
+    text-align: center;
   }
 
   a.active {
     svg {
-      color: #ffd700;
+      color: cyan;
     }
   }
 }
 
+.headerIcon {
+  height: 7vh;
+}
